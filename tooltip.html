@@ -1,0 +1,46 @@
+<html>
+<head>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="tooltip.js" type="text/javascript"></script>
+    <style type="text/css">
+        
+        .popup { 
+            position:absolute; 
+            display:none; 
+            z-index:1000;
+            background-color:black;
+            color:white;
+            border: 1px solid black;
+            padding: 2px;}
+        
+        div {
+            border: solid black 1px; 
+            width:200px;}
+        
+    </style>
+</head>
+
+<body> 
+    <script>$("body").tooltip();</script>
+    
+    
+    
+    <h1>Tooltip Plugin test</h1>
+    
+    <p>Here are 3 Divs for you to hover over.  The First two divs use the data-tooltip attribute<br />
+        So they get a tooltip!  The last div has none, no tooltip!
+    </p>
+    
+
+        <p> <div data-tooltip="I have my own popup!">Hover over me!</div></p>
+
+        
+        <p> <div data-tooltip="I have one too! Yay!">Hover over me too!!</div></p>
+    
+    
+        <p> <div>I don't have a data-tooltip attribute.<br /> No popup for me!! booo...</div> </p>
+     
+    <script type="text/javascript">
+    </script>  
+</body>
+</html>
