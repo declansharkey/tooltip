@@ -13,7 +13,7 @@
                     popup = $(event.target).after("<div class='popup' style='display: none;'>" + text+ "</div>").find(".popup")
                 }
 
-                //popup position in realtion to cursor
+                //popup position in relation to cursor
                 popup.css({
                     top: event.pageY + 5 + "px",
                     left: event.pageX + 5 + "px"
